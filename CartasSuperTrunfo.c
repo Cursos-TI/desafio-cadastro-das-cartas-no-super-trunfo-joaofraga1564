@@ -6,6 +6,7 @@
 
 
 int main() {
+    //Variáveis da Cidade_1
     char codigo[20];
     char cidade[20];
     int população;
