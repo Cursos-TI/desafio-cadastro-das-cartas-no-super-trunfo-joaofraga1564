@@ -9,7 +9,7 @@ int main() {
     //Variáveis da Cidade_1
     char codigo[20];
     char cidade[20];
-    int população;
+    int populacao;
     float area;
     float PIB;
     int turistico;
@@ -17,7 +17,7 @@ int main() {
     //Variáveis da Cidade_2
     char codigo2[20];
     char cidade2[20];
-    int população2;
+    int populacao2;
     float area2;
     float PIB2;
     int turistico2;
@@ -31,7 +31,7 @@ int main() {
     scanf("%s", &cidade);
 
     printf("Digite a população dessa cidade:");
-    scanf("%d", &população);
+    scanf("%d", &populacao);
 
     printf("Digite a area em metros dessa cidade:");
     scanf("%f", &area);
@@ -45,7 +45,7 @@ int main() {
     //resultados de cadastro da cidade 1
     printf("Segue Resultados da Cidade_1:\n");
      printf("Código da Cidade : %s |  Nome da Cidade : %s\n", codigo, cidade);
-     printf("A população da Cidade : %d |  Area da Cidade: %f\n", população, area);
+     printf("A população da Cidade : %d |  Area da Cidade: %f\n", populacao, area);
      printf("O PIB da cidade : %f |  Pontos Turísticos da Cidade : %d\n", PIB, turistico);  
 
     
@@ -57,7 +57,7 @@ int main() {
     scanf("%s", &cidade2);
 
     printf("Digite a população da Cidade:");
-    scanf("%d", &população2);
+    scanf("%d", &populacao2);
 
     printf("Digite a area em metros dessa cidade:");
     scanf("%f", &area2);
@@ -71,7 +71,7 @@ int main() {
     //Resultados de cadastro da cidade 2
     printf("Segue Resultados da Cidade_2:\n");
     printf("Código da Cidade : %s |  Nome da Cidade : %s\n", codigo2, cidade2);
-    printf("A população da Cidade : %d |  Area da Cidade: %f\n", população2, area2);
+    printf("A população da Cidade : %d |  Area da Cidade: %f\n", populacao2, area2);
     printf("O PIB da cidade : %f |  Pontos Turísticos da Cidade : %d\n", PIB2, turistico2);
 
     return 0;
