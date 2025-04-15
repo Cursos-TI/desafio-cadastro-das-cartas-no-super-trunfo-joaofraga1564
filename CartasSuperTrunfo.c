@@ -12,6 +12,8 @@ int main() {
     float area;
     float PIB;
     int turistico;
+
+    //Variáveis da Cidade_2
     char codigo2[20];
     char cidade2[20];
     int população2;
