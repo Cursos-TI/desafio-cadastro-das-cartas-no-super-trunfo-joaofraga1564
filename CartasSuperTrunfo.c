@@ -3,8 +3,6 @@
 // Desafio Super Trunfo - Países
 // Tema 1 - Cadastro das Cartas
 
-
-
 int main() {
     char codigo[20];
     char cidade[20];
@@ -24,7 +22,7 @@ int main() {
     float PIB_per_capita;
     float densidade_populacional2;
     float PIB_per_capita2;
-
+    float soma_cidade1, soma_cidade2;
 
     //Cadastro de Dados da cidade 1
     printf("Digite o código da Cidade:");
@@ -48,7 +46,6 @@ int main() {
     //calculos da Densidade e PIB per capita da cidade 1
     densidade_populacional = (populacao / area); 
     PIB_per_capita = (PIB / populacao);
-
 
     //resultados de cadastro da cidade 1
     printf("***Segue Resultados da Cidade_1:***\n");
@@ -88,6 +85,23 @@ int main() {
     printf("O PIB da cidade : %.2f |  Pontos Turísticos da Cidade : %d\n", PIB2, turistico2);
     printf("A densidade Populacional é: %.2f\n", densidade_populacional2);
     printf("O PIB per Capita é: %.2f\n", PIB_per_capita2);
+
+    // Calcula a soma de todos os atributos para cada cidade
+    soma_cidade1 = populacao + area + PIB + turistico + densidade_populacional + PIB_per_capita;
+    soma_cidade2 = populacao2 + area2 + PIB2 + turistico2 + densidade_populacional2 + PIB_per_capita2;
+
+    // Comparação das somas
+    printf("\n*** Comparação das Cartas ***\n");
+    printf("Soma total da Cidade 1: %.2f\n", soma_cidade1);
+    printf("Soma total da Cidade 2: %.2f\n", soma_cidade2);
+
+    if(soma_cidade1 > soma_cidade2) {
+        printf("A carta da Cidade 1 (%s) é mais forte que a da Cidade 2 (%s)\n", cidade, cidade2);
+    } else if(soma_cidade2 > soma_cidade1) {
+        printf("A carta da Cidade 2 (%s) é mais forte que a da Cidade 1 (%s)\n", cidade2, cidade);
+    } else {
+        printf("As cartas das cidades %s e %s têm força igual\n", cidade, cidade2);
+    }
 
     return 0;
 }
